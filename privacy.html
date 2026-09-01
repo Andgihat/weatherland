@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Weatherland</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <h1>Privacy Policy</h1>
+  <p class="lede">Weatherland · last updated 1 September 2026</p>
+
+  <p>Weatherland is a desktop wallpaper application. It has no user accounts,
+  no sign-in, no advertising and no analytics. Nothing you do in the app is
+  reported to its developer.</p>
+
+  <h2>What stays on your computer</h2>
+  <p>Everything the app remembers is stored locally, in the application's own
+  folder, and never leaves the device:</p>
+  <ul>
+    <li>the place you chose to display (its name and coordinates) and your
+      scene, palette, camera and widget settings;</li>
+    <li>map data for the cities you display, cached so the app works offline;</li>
+    <li>elevation tiles, cached for the same reason;</li>
+    <li>a plain-text log of what the app did, kept so that problems can be
+      diagnosed on your own machine.</li>
+  </ul>
+  <p>Uninstalling Weatherland removes all of it.</p>
+
+  <h2>What leaves your computer</h2>
+  <p>To draw real weather over a real place, the app requests public data from
+  the services below. Each request carries the coordinates of the place you
+  chose and, unavoidably, your IP address — as any web request does. No
+  identifier of you or of your device is attached.</p>
+
+  <div class="wrap">
+  <table>
+    <thead><tr><th>Service</th><th>What is requested</th><th>When</th></tr></thead>
+    <tbody>
+      <tr><td>open-meteo.com</td><td>weather forecast</td><td>about once an hour</td></tr>
+      <tr><td>api.met.no</td><td>weather forecast</td><td>about once an hour</td></tr>
+      <tr><td>geocoding-api.open-meteo.com</td><td>city search results</td><td>when you search for a city</td></tr>
+      <tr><td>overpass-api.de and its mirrors</td><td>OpenStreetMap geometry of a city</td><td>only when you add a city that is not already included</td></tr>
+      <tr><td>s3.amazonaws.com/elevation-tiles-prod</td><td>public elevation tiles</td><td>when a place is first displayed</td></tr>
+      <tr><td>ipapi.co</td><td>an approximate city for your IP address</td><td>once, on first run, before you have chosen a place</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <p>The request to ipapi.co exists only so that the first scene is somewhere
+  plausible rather than blank. Its answer is stored locally, it is never
+  repeated once you have chosen a place, and choosing a city yourself makes it
+  moot.</p>
+
+  <p>Requests to api.met.no carry the developer's own name and contact address
+  in the User-Agent header. Their terms of service require it. That is the
+  developer's data, not yours.</p>
+
+  <h2>What is never done</h2>
+  <p>Weatherland does not collect personal information, does not build a
+  profile, does not track usage, and does not sell or share data with anyone.
+  It contains no advertising and no third-party analytics.</p>
+
+  <h2>Children</h2>
+  <p>The app is not directed at children and collects nothing from anyone.</p>
+
+  <h2>Changes</h2>
+  <p>If this policy changes, the date above changes with it.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about this policy: use the support contact listed on the app's
+  Microsoft Store page.</p>
+
+  <footer><a href="./">Weatherland</a></footer>
+</main>
+</body>
+</html>
