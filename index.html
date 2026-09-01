@@ -7,7 +7,7 @@
 <meta name="description" content="A live Windows wallpaper that builds your city in 3D from OpenStreetMap and puts the real weather over it. Sunlight from the real sun, clouds from live forecasts.">
 <meta property="og:title" content="Weatherland">
 <meta property="og:description" content="Your city, in 3D, in the weather it is actually having — behind your desktop icons.">
-<meta property="og:image" content="https://andgihat.github.io/weatherland/shots/city-noon.jpg">
+<meta property="og:image" content="https://andgihat.github.io/weatherland/shots/globe-poster.jpg">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
 <link rel="stylesheet" href="style.css">
@@ -71,7 +71,11 @@
     </div>
 
     <figure class="shot">
-      <img loading="lazy" src="shots/globe.jpg" width="1920" height="1080" alt="Earth seen from orbit at night over Europe: the day-night line crosses the Atlantic, city lights trace the coastlines and rivers, cloud systems sit over the ocean, and real stars fill the sky behind.">
+      <video autoplay muted loop playsinline preload="none" width="1280" height="720"
+             poster="shots/globe-poster.jpg"
+             aria-label="Earth turning at night above Europe: city lights trace the coastlines and rivers, cloud systems drift over the Atlantic, snow covers the Arctic, and the Milky Way lies behind.">
+        <source src="shots/globe.mp4" type="video/mp4">
+      </video>
       <figcaption>The planet scene, right now. The day-night line is where it really is, the lights are NASA night imagery, and the stars behind are the real catalogue turning at sidereal rate.</figcaption>
     </figure>
   </div>
