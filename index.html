@@ -81,10 +81,15 @@
     <div class="stack">
       <p class="eyebrow">Weather you can check against the window</p>
       <h2>The clouds are above the city, not painted on it.</h2>
-      <p class="lede">They have volume and height, so they drop shadows onto the streets below and drift across them as the front moves through. Cover, wind direction and rain all come from the hourly forecast for the place you picked.</p>
+      <p class="lede">They have volume and height, so they drop shadows onto the streets below and drift across them as the front moves through. Cover, wind direction and rain all come from the hourly forecast for the place you picked. You can even hide the clouds and keep only their shadows.</p>
     </div>
     <figure class="shot">
-      <img loading="lazy" src="shots/city-clouds.jpg" width="1920" height="1080" alt="The 3D city seen from above with broken cloud overhead, each cloud casting a soft grey shadow across the streets, parks and harbour below.">
+      <video autoplay muted loop playsinline preload="none" width="1280" height="720"
+             poster="shots/city-clouds-poster.jpg"
+             aria-label="Manhattan from above while cloud shadows drift across the avenues and the Hudson, the cloud shapes themselves left invisible.">
+        <source src="shots/city-clouds.mp4" type="video/mp4">
+      </video>
+      <figcaption>Manhattan, with the clouds themselves hidden so that only their shadows move across the grid.</figcaption>
     </figure>
   </div>
 
@@ -185,6 +190,12 @@
     <p class="rule">© 2026 Andgihat. Map data © OpenStreetMap contributors, ODbL.</p>
   </div>
 </footer>
+
+<script>
+// Кто выключил анимации в системе, тот не звал и наши: показываем заглушку.
+if (matchMedia("(prefers-reduced-motion: reduce)").matches)
+  for (const v of document.querySelectorAll("video[autoplay]")) { v.autoplay = false; v.pause(); }
+</script>
 
 </body>
 </html>

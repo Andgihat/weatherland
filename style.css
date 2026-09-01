@@ -50,7 +50,7 @@ nav a:hover{color:var(--ink);text-decoration:none}
 .hero .stack{align-items:center;text-align:center}
 .hero .lede{margin-inline:auto}
 .shot{border:1px solid var(--line2);border-radius:var(--r);overflow:hidden;box-shadow:var(--shadow);background:var(--panel)}
-.shot img{aspect-ratio:16/9;object-fit:cover;width:100%}
+.shot img,.shot video{aspect-ratio:16/9;object-fit:cover;width:100%;background:#0d1119}
 .hero .shot{margin-top:3.5rem}
 figcaption{color:var(--faint);font-size:.85rem;padding:.7rem 1rem;border-top:1px solid var(--line)}
 
