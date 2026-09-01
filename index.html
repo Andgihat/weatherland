@@ -2,35 +2,184 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Weatherland</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Weatherland — your city, live, on your desktop</title>
+<meta name="description" content="A live Windows wallpaper that builds your city in 3D from OpenStreetMap and puts the real weather over it. Sunlight from the real sun, clouds from live forecasts.">
+<meta property="og:title" content="Weatherland">
+<meta property="og:description" content="Your city, in 3D, in the weather it is actually having — behind your desktop icons.">
+<meta property="og:image" content="https://andgihat.github.io/weatherland/shots/city-noon.jpg">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<main>
-  <h1>Weatherland</h1>
-  <p class="lede">A live desktop wallpaper for Windows: your city in 3D, under the weather it actually has.</p>
 
-  <p>Buildings are extruded from OpenStreetMap outlines and lit by the real
-  position of the sun. Clouds, rain and wind come from live forecasts. There is
-  also a globe mode — the whole Earth, with real night lights, snow cover and
-  moving weather.</p>
+<header>
+  <div class="wrap">
+    <a class="brand" href="#top">Weatherland</a>
+    <nav>
+      <a class="hide-s" href="#scenes">Scenes</a>
+      <a class="hide-s" href="#how">How it works</a>
+      <a href="#buy">Buy</a>
+      <a class="btn btn-main" href="https://github.com/Andgihat/weatherland/releases/latest">Download</a>
+    </nav>
+  </div>
+</header>
 
-  <p>Weatherland is distributed through the Microsoft Store.</p>
+<main id="top">
 
-  <h2>Documents</h2>
-  <ul>
-    <li><a href="privacy.html">Privacy policy</a></li>
-  </ul>
+<section class="hero">
+  <div class="wrap stack">
+    <h1>Your city, in the weather<br>it is actually having.</h1>
+    <p class="lede">Weatherland builds your city in 3D from OpenStreetMap, lights it by the real position of the sun, and puts live forecast weather over it. Then it sits behind your desktop icons and keeps going.</p>
+    <div class="btns">
+      <a class="btn btn-main" href="https://github.com/Andgihat/weatherland/releases/latest">Download for Windows</a>
+      <a class="btn btn-alt" href="#buy">Buy a key — €4.99</a>
+    </div>
+    <p class="note">Windows 10 and 11 · free for 7 days, no account · one-time purchase</p>
 
-  <h2>Data sources</h2>
-  <p>Map geometry from <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>
-  contributors. Weather from <a href="https://open-meteo.com">Open-Meteo</a> and
-  <a href="https://api.met.no">MET Norway</a>. Night lights, snow cover and
-  imagery from NASA Visible Earth and NASA Earth Observatory (public domain).
-  Star positions from the HYG database.</p>
+    <figure class="shot">
+      <img src="shots/city-noon.jpg" width="1920" height="1080" alt="A 3D city at midday on a Windows desktop: extruded buildings, streets and parks under a clear sky, with long shadows cast by the real sun position.">
+      <figcaption>Barcelona at midday. Every building outline comes from OpenStreetMap; the shadows are cast by the sun where it really is.</figcaption>
+    </figure>
+  </div>
+</section>
 
-  <footer>© 2026 Andgihat</footer>
+<section id="scenes">
+  <div class="wrap stack">
+    <div>
+      <p class="eyebrow">Two scenes</p>
+      <h2>A city you know, or the whole planet.</h2>
+    </div>
+    <div class="grid">
+      <article class="card">
+        <span class="ico" aria-hidden="true">🏙</span>
+        <h3>Your city</h3>
+        <p>129 cities ship with the app. Anywhere else downloads from OpenStreetMap in a couple of minutes and is then yours offline — buildings, streets, parks, water, trees and real terrain height.</p>
+      </article>
+      <article class="card">
+        <span class="ico" aria-hidden="true">🌍</span>
+        <h3>The planet</h3>
+        <p>Earth from orbit, with real cloud cover, snow line, ocean depth and city lights taken from NASA night imagery. Behind it, the real star catalogue, turning at sidereal rate.</p>
+      </article>
+      <article class="card">
+        <span class="ico" aria-hidden="true">🌦</span>
+        <h3>Real weather</h3>
+        <p>Cloud cover, rain, snow and wind come from Open-Meteo and MET Norway, refreshed hourly. When it rains outside your window, it rains on your desktop.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap split">
+    <div class="stack">
+      <p class="eyebrow">Weather you can check against the window</p>
+      <h2>The clouds are above the city, not painted on it.</h2>
+      <p class="lede">They have volume and height, so they drop shadows onto the streets below and drift across them as the front moves through. Cover, wind direction and rain all come from the hourly forecast for the place you picked.</p>
+    </div>
+    <figure class="shot">
+      <img loading="lazy" src="shots/city-clouds.jpg" width="1920" height="1080" alt="The 3D city seen from above with broken cloud overhead, each cloud casting a soft grey shadow across the streets, parks and harbour below.">
+    </figure>
+  </div>
+
+  <div class="wrap split">
+    <div class="stack">
+      <p class="eyebrow">Sunlight from the real sun</p>
+      <h2>After sunset, the city lights do the work.</h2>
+      <p class="lede">Sun height sets the palette from dawn to dusk, its azimuth sets the direction of every shadow, and its closeness to the horizon sets how warm the light is. None of it is a preset.</p>
+    </div>
+    <figure class="shot">
+      <img loading="lazy" src="shots/city-night.jpg" width="1920" height="1080" alt="The 3D city at night, lit by warm window and street lighting against a dark sky.">
+    </figure>
+  </div>
+</section>
+
+<section id="how">
+  <div class="wrap stack">
+    <div>
+      <p class="eyebrow">How it works</p>
+      <h2>Seven days free. Then a key.</h2>
+      <p class="lede">No account, no subscription, nothing phoning home. The key is checked on your own machine, so it keeps working on a laptop with no internet at all.</p>
+    </div>
+    <ol class="steps">
+      <li><b>Download and run</b><p>The whole app, every feature, for seven days. It settles in behind your desktop icons on first launch.</p></li>
+      <li><b>Buy a key</b><p>Card payment in euros or dollars. The key arrives by email, usually within minutes.</p></li>
+      <li><b>Paste it into Settings</b><p>Open settings from the tray icon, paste the key, and that is the end of it. Verified offline, never expires.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section id="buy">
+  <div class="wrap stack">
+    <div>
+      <p class="eyebrow">Price</p>
+      <h2>One payment. Yours to keep.</h2>
+    </div>
+    <div class="price">
+      <p class="amount">€4.99 <span>one-time</span></p>
+      <ul>
+        <li>Every feature, both scenes, no tiers</li>
+        <li>All future updates included</li>
+        <li>Use it on your own computers</li>
+        <li>Works offline — the key is checked locally</li>
+        <li>14 days to change your mind</li>
+      </ul>
+      <!-- Ссылка на оплату Prodamus. Заменить на настоящую, когда будет заведена
+           платёжная страница в кабинете. Пока ведёт на почту намеренно:
+           неработающая кнопка «Купить» хуже, чем её отсутствие. -->
+      <div class="btns">
+        <a class="btn btn-main" href="mailto:den.eremenko.1993@gmail.com?subject=Weatherland%20licence">Buy a key</a>
+        <a class="btn btn-alt" href="https://github.com/Andgihat/weatherland/releases/latest">Try it first</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap stack">
+    <h2>Questions</h2>
+    <div>
+      <details><summary>What does it need to run?</summary><p>Windows 10 or 11, 64-bit, and a graphics card supporting Vulkan or DirectX 12 — anything from the last decade or so. The scene is drawn by a dedicated renderer, not by a browser.</p></details>
+      <details><summary>Will it slow my computer down?</summary><p>Frame rate and detail are adjustable, and battery mode slows or pauses the scene on laptops. The wallpaper stops drawing when nothing can see it.</p></details>
+      <details><summary>Is my city included?</summary><p>129 cities ship with the app. If yours is not among them, type its name into settings and it downloads from OpenStreetMap in a couple of minutes, then stays on your disk for good.</p></details>
+      <details><summary>Does it need an internet connection?</summary><p>Only to fetch the forecast, roughly once an hour, and to download a city you have not used before. Everything else runs offline, the licence check included.</p></details>
+      <details><summary>What if the key does not arrive?</summary><p>Write to the address in the footer with your payment details and it will be sent by hand. Keys are issued by a person, not only by a machine.</p></details>
+      <details><summary>Can I get a refund?</summary><p>Within 14 days, for any reason, just ask. The seven-day trial exists so that this should rarely be necessary.</p></details>
+    </div>
+  </div>
+</section>
+
 </main>
+
+<footer>
+  <div class="wrap">
+    <div class="grid">
+      <div>
+        <h3>Weatherland</h3>
+        <p>A live desktop wallpaper for Windows. Built by one person.</p>
+      </div>
+      <div>
+        <h3>Links</h3>
+        <ul>
+          <li><a href="https://github.com/Andgihat/weatherland/releases/latest">Download</a></li>
+          <li><a href="privacy.html">Privacy policy</a></li>
+          <li><a href="mailto:den.eremenko.1993@gmail.com">Support</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Data</h3>
+        <ul>
+          <li><a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors</li>
+          <li><a href="https://open-meteo.com">Open-Meteo</a> · <a href="https://api.met.no">MET Norway</a></li>
+          <li>NASA Visible Earth · Earth Observatory</li>
+          <li>HYG star database</li>
+        </ul>
+      </div>
+    </div>
+    <p class="rule">© 2026 Andgihat. Map data © OpenStreetMap contributors, ODbL.</p>
+  </div>
+</footer>
+
 </body>
 </html>
